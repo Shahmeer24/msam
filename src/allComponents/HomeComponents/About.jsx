@@ -16,8 +16,7 @@ function About() {
             I've been hooked ever since. There's something magical about turning
             lines of code into visually appealing, interactive experiences that
             users can enjoy.
-          </p>
-          <p>
+          <br />
             My other interests/hobbies include Photography, Video Editing,
             Designing, Football.
           </p>
