@@ -252,7 +252,6 @@ button {
 
 .aboutMeContent p {
     margin-top: 1rem;
-    height: 90%;
     overflow-y: auto;
 
 }
@@ -688,6 +687,11 @@ button {
 
     .aboutMeContent {
         max-height: 200px;
+        overflow-y: auto;
+    }
+
+     .aboutMeContent p {
+        height: 80%;
         overflow-y: auto;
     }
 
