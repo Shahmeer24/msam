@@ -249,10 +249,12 @@ button {
     font-size: 1.1rem;
     overflow: hidden;
     position: relative;
+    padding-bottom: 1rem;
 }
 
 .aboutMeContent {
     max-height: 100%;
+    padding-bottom:1rem;
     overflow-y: auto;
     word-break: break-word;
     overflow-wrap: break-word;
