@@ -4,7 +4,7 @@
 
     --bg-color: #caa473;
     --section-bg-light: #dadada;
-    --icon-color: #4048b6;
+    --icon-color: #08b12d;
     --icon-color-hover: #495057;
     --text-light: #e3e4e5;
     --text-dark: #151719;
@@ -227,7 +227,7 @@ button {
 }
 
 .bannerHeading span {
-    background-color: var(--icon-color);
+    background-color: #4048b6;
     color: var(--text-light);
     padding: 5px 10px;
     font-weight: bold;
@@ -249,8 +249,6 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    /*overflow: hidden;*/
-    /*position: relative;*/
 }
 
 .aboutMeContent {
@@ -595,7 +593,7 @@ button {
     }
 
     .aboutMeContent {
-        max-height: 200px;
+        height: 200px;
         overflow-y: auto;
 
     }
@@ -702,7 +700,7 @@ button {
     }
 
     .aboutMeContent {
-        max-height: 200px;
+        height: 200px;
         overflow-y: auto;
     }
 
