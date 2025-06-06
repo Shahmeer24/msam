@@ -255,6 +255,9 @@ button {
     overflow-y: auto;
     word-break: break-word;
     overflow-wrap: break-word;
+    border-radius: 20px; 
+    background: transparent;
+    padding-right: 8px;
 }
 
 .aboutMeContent p {
