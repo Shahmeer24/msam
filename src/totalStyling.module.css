@@ -245,17 +245,20 @@ button {
 }
 
 .aboutMe {
-
     height: 250px;
     font-size: 1.1rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.aboutMeContent {
+    max-height: 100%;
+    overflow-y: auto;
 }
 
 .aboutMeContent p {
     margin-top: 1rem;
-    overflow-y: scroll;
-    word-break: break-all;
-  overflow-wrap: anywhere;
-
+    word-break: break-word;
 }
 
 .skillsGrid {
