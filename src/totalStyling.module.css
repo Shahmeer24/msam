@@ -4,7 +4,7 @@
 
     --bg-color: #caa473;
     --section-bg-light: #dadada;
-    --icon-color: #08b12d;
+    --icon-color: #058d22;
     --icon-color-hover: #495057;
     --text-light: #e3e4e5;
     --text-dark: #151719;
@@ -113,11 +113,14 @@ button {
     margin-right: 8px;
     margin-top: -4px;
 }
+.socialIcon:hover{
+    color:var(--bg-color);
+}
 
 .sidebarIcon:hover,
 .sidebarIcon:active,
 .sidebarIcon:focus {
-    color: var(--icon-color-hover);
+    color: var(--bg-color);
 }
 
 .mainContent {
@@ -172,7 +175,7 @@ button {
 }
 
 .contactInfo a {
-    color: var(--icon-color);
+    color: #850000;
     text-decoration: none;
     transition: color 0.3s ease;
     font-size: 1rem;
@@ -180,7 +183,7 @@ button {
 }
 
 .contactInfo a:hover {
-    color: var(--icon-color-hover);
+    color: black;
 }
 
 .homeContainer {
