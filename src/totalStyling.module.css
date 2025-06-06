@@ -252,7 +252,7 @@ button {
 
 .aboutMeContent p {
     margin-top: 1rem;
-    overflow-y: auto;
+    overflow-y: scroll;
     word-break: break-all;
   overflow-wrap: anywhere;
 
