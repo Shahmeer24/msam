@@ -246,6 +246,9 @@ button {
 .aboutMe {
     height: 250px;
     font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     /*overflow: hidden;*/
     /*position: relative;*/
 }
