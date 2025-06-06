@@ -223,7 +223,7 @@ button {
     position: relative;
     top: 2px;
     left: -33px;
-    z-index: 100000000;
+    z-index: 1;
 }
 
 .bannerHeading span {
@@ -252,7 +252,6 @@ button {
 
 .aboutMeContent {
     max-height: 100%;
-    padding-bottom:1rem;
     overflow-y: auto;
     word-break: break-word;
     overflow-wrap: break-word;
