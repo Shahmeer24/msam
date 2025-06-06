@@ -224,7 +224,7 @@ button {
     position: relative;
     top: 2px;
     left: -33px;
-    z-index: 1;
+    z-index: 100000000;
 }
 
 .bannerHeading span {
@@ -596,6 +596,11 @@ button {
         max-height: 200px;
         overflow-y: auto;
 
+    }
+
+    .projectsList{
+        max-height: 300px;
+        overflow-y: auto;
     }
 
     .skillsGrid {
