@@ -265,6 +265,7 @@ button {
     padding-bottom: 1rem;
     word-break: break-word;
     overflow-wrap: break-word;
+    text-align justify;
     white-space: pre-line;
     max-width: 100%;
     box-sizing: border-box;
@@ -285,8 +286,7 @@ button {
 .projectsList {
     display: grid;
     gap: 15px;
-    /* max-height: 300px;
-    overflow-y: auto; */
+    
 }
 
 .projectItem {
@@ -706,6 +706,11 @@ button {
 
      .aboutMeContent p {
         height: 80%;
+        overflow-y: auto;
+    }
+
+    .projectsList{
+        max-height: 300px;
         overflow-y: auto;
     }
 
