@@ -246,7 +246,7 @@ button {
 .aboutMe {
     height: 250px;
     font-size: 1.1rem;
-    overflow: hidden;
+    /*overflow: hidden;*/
     position: relative;
 }
 
@@ -594,11 +594,6 @@ button {
 
     }
 
-    .projectsList{
-        height: 300px;
-        overflow-y: auto;
-    }
-
     .skillsGrid {
         display: flex;
         flex-wrap: wrap;
@@ -707,11 +702,6 @@ button {
 
      .aboutMeContent p {
         height: 80%;
-        overflow-y: auto;
-    }
-
-    .projectsList{
-        height: 300px;
         overflow-y: auto;
     }
 
