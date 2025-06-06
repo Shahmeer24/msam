@@ -260,6 +260,7 @@ button {
 
 .aboutMeContent p {
     margin-top: 1rem;
+    padding-bottom: 1rem;
     word-break: break-word;
     overflow-wrap: break-word;
     white-space: pre-line;
