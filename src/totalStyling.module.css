@@ -529,7 +529,10 @@ button {
     background-color: #158587;
     transform: translateY(-1px);
 }
-
+.mailStatus{
+    display:inline;
+    margin-left: 0.4rem;
+}
 /* ---------------- RESPONSIVENESS ---------------- */
 
 @media (max-width: 1024px) {
@@ -788,6 +791,11 @@ button {
 
     .contactEmailForm .colMd6 {
         width: 100%;
+    }
+
+    .mailStatus{
+        display: block;
+        margin-left: 0.4rem;
     }
 }
 

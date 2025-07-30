@@ -10,6 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+contact-local.js
 *.local
 .env
 .gitignore

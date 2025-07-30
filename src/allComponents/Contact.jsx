@@ -138,9 +138,9 @@ function Contact() {
                 <button type="button" onClick={handleReset}>
                   Reset
                 </button>
+                {status && <span className={style.mailStatus}>{status}</span>}
               </div>
             </form>
-            {status && <p>{status}</p>}
           </div>
         </section>
       </div>

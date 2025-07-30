@@ -27,7 +27,7 @@ export default async function handler(req, res) {
 
   try {
     await transporter.sendMail({
-      from: `"${name}" <${process.env.EMAIL_USER}>`,
+      from: `${name}`,
       replyTo: email,
       to: process.env.EMAIL_USER,
       subject: `Mail from msam24: ${subject}`,
@@ -38,6 +38,6 @@ export default async function handler(req, res) {
     res.status(200).send("OK");
   } catch (error) {
     console.error(error);
-    res.status(500).send("something wrong");
+    res.status(500).send("something went wrong");
   }
 }
