@@ -30,8 +30,11 @@ export default async function handler(req, res) {
       from: `"${name}" <${process.env.EMAIL_USER}>`,
       replyTo: email,
       to: process.env.EMAIL_USER,
-      subject: `Submission from your site: ${subject}`,
-      text: message,
+      subject: `Mail from msam24: ${subject}`,
+      text: `Sender name: ${name} <br>
+      Sender address: ${email} <br>
+      Message: <br>
+      ${message}`,
     });
     res.status(200).send("OK");
   } catch (error) {
