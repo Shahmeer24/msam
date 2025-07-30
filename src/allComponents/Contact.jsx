@@ -28,7 +28,7 @@ function Contact() {
     setStatus("Sending Mail...");
     console.log("Form submitted:", formData);
     try {
-      const response = await fetch("https://msam24.vercel.app/", {
+      const response = await fetch("https://msam24.vercel.app/api/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
