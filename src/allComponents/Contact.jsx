@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import style from "../totalStyling.module.css";
 
 function Contact() {
@@ -9,6 +9,7 @@ function Contact() {
     message: "",
   };
   const [formData, setFormData] = React.useState(initialFormState);
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,28 +25,26 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setStatus("Sending Mail...");
     console.log("Form submitted:", formData);
     try {
-      const response = await fetch(
-        "https://formsubmit.co/ajax/shahmeermondal1576@gmail.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      const response = await fetch("https://msam24.vercel.app/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
-        alert("Message sent successfully!");
+        setStatus("Mail sent successfully!");
         setFormData({ name: "", email: "", subject: "", message: "" });
       } else {
-        throw new Error("Failed to send message");
+        setStatus("Failed to send message");
       }
     } catch (error) {
-      alert("Error sending message. Please try again later.");
+      setStatus("Error sending message. Please try again later.");
       console.error(error);
     }
   };
@@ -69,18 +68,10 @@ function Contact() {
 
             <form
               onSubmit={handleSubmit}
-              action="https://formsubmit.co/shahmeermondal1576@gmail.com"
-              method="POST"
               role="form"
               className={style.contactEmailForm}
               autoComplete="off"
             >
-              <input
-                type="hidden"
-                name="_gotcha"
-                style={{ display: "none !important" }}
-              />
-
               <div className="row">
                 <div className={`${style.formGroup} ${style.colMd6}`}>
                   <label htmlFor="name"></label>
@@ -147,15 +138,8 @@ function Contact() {
                   Reset
                 </button>
               </div>
-              <input type="hidden" name="_next" value="index.html" />
-              <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_template" value="table" />
-              <input
-                type="hidden"
-                name="_autoresponse"
-                value="Thanks for your message! I'll get back to you soon."
-              />
             </form>
+            {status && <p>{status}</p>}
           </div>
         </section>
       </div>
