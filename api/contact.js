@@ -33,8 +33,7 @@ export default async function handler(req, res) {
       subject: `Mail from msam24: ${subject}`,
       html: `<h3>Sender name: ${name}</h3> <br>
       <h3>Sender address: ${email}</h3> <br>
-      <h2>Message: <br>
-      ${message}</h2>`,
+      <h3>Message:${message}</h3>`,
     });
     res.status(200).send("OK");
   } catch (error) {

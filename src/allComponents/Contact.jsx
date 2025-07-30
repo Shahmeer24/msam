@@ -21,6 +21,7 @@ function Contact() {
 
   const handleReset = (e) => {
     setFormData(initialFormState);
+    setStatus("");
   };
 
   const handleSubmit = async (e) => {
