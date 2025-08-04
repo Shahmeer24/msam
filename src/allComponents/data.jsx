@@ -96,7 +96,7 @@ export const projectsData = [
   {
     title: "Amantran Group Website",
     desc: "Designed and developed a website (frontend) for a hotel company - Amantran Group. - 2024",
-    srcSite: "https://amantranhotels.com",
+    srcSite: "https://66da7e4a90eba4f79dbc6949--amantranhotels.netlify.app/",
     srcProject: "https://github.com/Shahmeer24/amantran-hotels",
   },
 ];
@@ -119,3 +119,4 @@ function Data() {
 }
 
 export default Data;
+
