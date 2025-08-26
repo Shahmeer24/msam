@@ -14,12 +14,24 @@ function Projects() {
             <div key={index} className={style.projectItem}>
               <div className={style.projectTitle}>{item.title}</div>
               <p>{item.desc}</p>
-              <a href={item.srcSite} target="_blank">
-                View Site
-              </a>
-              <a href={item.srcProject} target="_blank">
-                View Project
-              </a>
+              {item.srcSite && (
+                <a
+                  href={item.srcSite}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View Site
+                </a>
+              )}
+              {item.srcProject && (
+                <a
+                  href={item.srcProject}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  View Project
+                </a>
+              )}
             </div>
           ))}
         </div>

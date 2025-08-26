@@ -1,19 +1,15 @@
 import React from "react";
-import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons";
 
-import { 
-  faHtml5, 
-  faCss3Alt, 
+import {
+  faHtml5,
+  faCss3Alt,
   faReact,
   faNodeJs,
-} from '@fortawesome/free-brands-svg-icons';
-import { 
-  faBrush, 
-  faVideo, 
-  faUsers 
-} from '@fortawesome/free-solid-svg-icons';
-import {SiExpress, SiMongodb} from "react-icons/si";
+} from "@fortawesome/free-brands-svg-icons";
+import { faBrush, faVideo, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { SiExpress, SiMongodb } from "react-icons/si";
 
 /*Social Data*/
 export const socialData = [
@@ -62,20 +58,13 @@ export const educationData = [
 /*Experience Data*/
 export const experienceData = [
   {
-    desc: "Completed Web Designing/Development course from SkillAcademia (2022)",
-    certificationLink: "",
-  },
-  {
-    desc: "Completed Machine Learning Bootcamp hosted by GDSC and TensorFlow User Group Hyderabad (2024)",
-    certificationLink: "",
-  },
-  {
-    desc: "Managed numerous departmental fests, and other societal events",
-  },
-  {
-    desc: "Presented a Machine Learning topic on – “Sentiment Analysis from Speech using Feature Extraction” as a part of final year dissertation project in St. Xavier’s College (Autonomous), Kolkata – 2024.",
-    certificationLink:
-      "https://github.com/Shahmeer24/Sentiment-Analysis-from-Speech",
+    name: "Graphitite",
+    type: "Freelance",
+    designation: "Web Developer",
+    timeline: "Jun 2024 - Present",
+    desc: "Develop and maintain websites for various clients, focusing on creating modern, responsive, and user-friendly interfaces to meet business objectives.",
+    keyProject: "Amantran Group Hospitality Website",
+    liveLink: "https://amantranhotels.netlify.app",
   },
 ];
 
@@ -94,10 +83,9 @@ export const projectsData = [
     srcProject: "https://github.com/Shahmeer24/taskHub",
   },
   {
-    title: "Amantran Group Website",
-    desc: "Designed and developed a website (frontend) for a hotel company - Amantran Group. - 2024",
-    srcSite: "https://amantranhotels.com",
-    srcProject: "https://github.com/Shahmeer24/amantran-hotels",
+    title: "Sentiment Analysis from Speech using Feature Extraction",
+    desc: "Developed and presented a Machine Learning topic about determining human emotions in several classes using speech data - 2024.",
+    srcProject: "https://github.com/Shahmeer24/Sentiment-Analysis-from-Speech",
   },
 ];
 
@@ -111,7 +99,7 @@ export const skillData = [
   // { name: "MongoDB", icon: SiMongodb, color: "#207705" },
   { name: "Canva", icon: faBrush, color: "#01a4fC" },
   { name: "Video Editing", icon: faVideo, color: "#6289FA" },
-  { name: "Leadership", icon: faUsers, color: "#4B6A9B" }
+  { name: "Leadership", icon: faUsers, color: "#4B6A9B" },
 ];
 
 function Data() {

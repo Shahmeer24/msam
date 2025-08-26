@@ -9,30 +9,33 @@ function Experience() {
     <>
       <section className={`${style.section} ${style.experienceMain}`}>
         <div className={`${style.bannerHeading} ${style.bannerHeading1}`}>
-          <span>
-            Experience & <br />
-            Achievements
-          </span>
+          <span>Experience</span>
         </div>
         <div className={style.experienceAchievements}>
           {experienceData.map((item, index) => (
-            <ul key={index}>
-              <li>
-                <FontAwesomeIcon
-                  icon={faChevronRight}
-                  style={{ paddingRight: "20px" }}
-                />
-                {item.desc}
-                {item.certificationLink && (
-                  <a
-                    style={{ paddingLeft: "5px", color: "var(--head-color)" }}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href={item.certificationLink}
-                  >
-                    Link
-                  </a>
-                )}
+            <ul key={index} className={style.experienceList}>
+              <li className={style.experienceItem}>
+                <div className={style.experienceItemHeading}>
+                  <span>{item.name}</span>
+                  <span>{item.timeline}</span>
+                </div>
+                <div className={style.experienceItemType}>
+                  {item.designation} &nbsp; ({item.type})
+                </div>
+                <div className={style.experienceItemDesc}>{item.desc}</div>
+                <div className={style.experienceItemProject}>
+                  Key Project: {item.keyProject}<br />
+                  {item.liveLink && (
+                    <a
+                      className={style.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={item.liveLink}
+                    >
+                    (Live Link)
+                    </a>
+                  )}
+                </div>
               </li>
             </ul>
           ))}
