@@ -37,7 +37,7 @@ export const educationData = [
     institution: "Jadavpur University",
     location: " Kolkata",
     period: "2024-2026",
-    /*grade: "CGPA: " */
+    grade: "CGPA: 8.57 (current)",
   },
   {
     degree: "Bachelors of Computer Science (Hons)",
@@ -51,7 +51,7 @@ export const educationData = [
     institution: "Bishop Morrow School",
     location: " Krishnanagar",
     period: "2007-2021",
-    grade: "Percentage: 96.25%",
+    grade: "ISC: 93.8% <br> ICSE: 91%",
   },
 ];
 
@@ -107,3 +107,4 @@ function Data() {
 }
 
 export default Data;
+
