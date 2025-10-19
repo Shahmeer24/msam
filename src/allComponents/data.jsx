@@ -51,7 +51,7 @@ export const educationData = [
     institution: "Bishop Morrow School",
     location: " Krishnanagar",
     period: "2007-2021",
-    grade: "ISC: 93.8% <br> ICSE: 91%",
+    grade: "ISC: 93.8%; ICSE: 91%",
   },
 ];
 
@@ -107,4 +107,5 @@ function Data() {
 }
 
 export default Data;
+
 
