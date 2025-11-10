@@ -37,7 +37,7 @@ export const educationData = [
     institution: "Jadavpur University",
     location: " Kolkata",
     period: "2024-2026",
-    grade: "CGPA: 8.57 (current)",
+    grade: "CGPA: 8.48 (current)",
   },
   {
     degree: "Bachelors of Computer Science (Hons)",
@@ -72,13 +72,13 @@ export const experienceData = [
 export const projectsData = [
   {
     title: "Zypher",
-    desc: "Designed and developed a simple text and file sharing application. - 2025",
+    desc: "Designed and developed a simple text and file sharing application - 2025",
     srcSite: "https://zypher24.vercel.app",
     srcProject: "https://github.com/Shahmeer24/zypher",
   },
   {
     title: "taskHub",
-    desc: "Designed and developed a simple web-based task manager application. - 2025",
+    desc: "Designed and developed a simple web-based task manager application - 2025",
     srcSite: "https://taskhub24.netlify.app",
     srcProject: "https://github.com/Shahmeer24/taskHub",
   },
@@ -107,5 +107,6 @@ function Data() {
 }
 
 export default Data;
+
 
 
